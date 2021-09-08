@@ -5,3 +5,9 @@ $(window).on('scroll', function(){
     $('nav').removeClass('sticky');
   }
 })
+
+$(document).ready(function(){
+  $(".logo img").click(function(){
+    $("nav ul").toggleClass("active")
+  })
+})

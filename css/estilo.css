@@ -24,7 +24,7 @@ nav{
     padding: 10px 100px;
     box-sizing: border-box;
     transition: 0.6s;
-    z-index: 100000;
+    z-index: 1;
 }
 
 /*Tag de Estilo do link com mouse sobre o link*/
@@ -184,6 +184,10 @@ nav.sticky ul li a{
     animation-duration: 0.5;
 }
 
+.responsive_bar{
+    display: none;
+}
+
 @-webkit-keyframes fade{
     from{opacity: .4}
     to {opacity: 1}
@@ -192,4 +196,75 @@ nav.sticky ul li a{
 @keyframes fade {
     from{opacity: .4}
     to {opacity: 1}
+}
+
+@media(max-width:768px){
+
+    .responsive_bar{
+        display: block;
+        width: 100%;
+        background: #303030;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 5px 20px;
+        box-sizing: border-box;
+        z-index: 2;
+    }
+
+    .responsive_bar .logo img{
+        float: left;
+        height: 50px;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .responsive_bar .menu h4{
+        float: right;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        line-height: 50px;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
+    nav,
+    nav.sticky{
+        background: #262626;
+        height: 60px;
+        padding: 0;
+    }
+
+    nav .logo{
+        display: none;
+    }
+
+    nav ul{
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        background: #262626;
+        float: none;
+        display: none;
+    }
+
+    nav ul.active{
+        display: block;
+    }
+
+    nav ul li{
+        width: 100%;
+    }
+
+    nav ul li a{
+        display: block;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        line-height: 50px !important;
+        color: #fff;
+    }
 }
