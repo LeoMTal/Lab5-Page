@@ -1,4 +1,7 @@
-window.addEventListener("scroll", function(){
-  var header = document.querySelector("header");
-  header.classList.toggle("sticky", window.scrollY > 0);
+$(window).on('scroll', function(){
+  if($(window).scrollTop()){
+    $('nav').addClass('sticky');
+  }else{
+    $('nav').removeClass('sticky');
+  }
 })
