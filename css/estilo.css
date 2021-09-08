@@ -1,0 +1,164 @@
+/*Folha de estilos adicionais fora do Bootstrap*/
+
+/*TUDO*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*TAGS*/
+body, html {
+    background-color: #fff;
+    min-height: 200vh;
+}
+
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 80px;
+    z-index: 100000;
+}
+
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    height: 6rem;
+    transition: 0.6s;
+}
+
+header.sticky{
+    padding: 5px 100px;
+    background: rgb(0, 0, 0);
+}
+
+header ul{
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+header.sticky .logo,
+header.sticky ul li a{
+    height: 3rem;
+    color: #fff;
+}
+
+/*CLASSES*/
+
+.slideMenu_container{
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.slideClass{
+    display: none;
+}
+
+.slideContent{
+    margin-right: auto;
+    margin-left: auto;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.img_banner{
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+/*Botões de Próximo/Prévio*/
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Posiciona o Botão Next para a direita*/
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.styleDots{
+    position: absolute;
+    left: 45vw;
+    bottom: 2vh;
+}
+
+.dot{
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/*Classe que será definida dentro do Javascript, e alterará o estado da classe .dot*/
+.active, .dot:hover{
+    background-color: #717171;
+}
+
+/*Animação de fade... talvez não funcione*/
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 0.5;
+}
+
+@-webkit-keyframes fade{
+    from{opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from{opacity: .4}
+    to {opacity: 1}
+}
