@@ -1,7 +1,9 @@
 /*Folha de estilos adicionais fora do Bootstrap*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 /*TUDO*/
-*{
+*,
+*::before
+*::after{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -29,12 +31,13 @@ nav{
 
 /*Tag de Estilo do link com mouse sobre o link*/
 a:hover{
-    color: royalblue;
+    color: #246ea7;
 }
 
 /*Tag de Estilo que posiciona a logo para o lado direito*/
 nav .logo{
-    float: left;   
+    float: left;
+       
 }
 
 /*Tag de Estilo que especifica as propriedades da logo*/
@@ -46,12 +49,12 @@ nav .logo img{
 
 /*Tag de Estilo que posiciona a UL, conjunto de lista*/
 nav ul{
+    position: sticky;
     float: right;
     margin: 0;
     padding: 0;
-    font-size: 20px;
     display: flex;
-    text-transform: uppercase;
+    
 }
 
 /*Tag de Estilo que retira os pontos*/
@@ -61,10 +64,15 @@ nav ul li{
 
 /*Tag de Estilo que especifica as propriedades dos itens na lista do menu*/
 nav ul li a{
+    position: relative;
     line-height: 80px;
-    color: #fff;
-    padding: 5px 20px;
+    justify-content: space-around;
+    letter-spacing: 0.5px;
+    color: #e2e2e2;
+    margin: 0px 10px;
     font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
     text-decoration: none;
     text-transform: 0.6s;
 }
@@ -72,13 +80,27 @@ nav ul li a{
 /*Tag de Estilo que especifica as propriedades quando o mouse é colocado sobre os itens da lista*/
 nav ul li a:hover{
     color: #fff;
-    background: #f00;
-    
+    cursor: pointer;
+}
+
+nav ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: #54aaea;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after{
+    width: 100%; 
 }
 
 /*Tag de Estilo que especifica as propriedades do menu fixo*/
 nav.sticky{
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(84, 170, 234, 0.9);
     height: 70px;
     padding: 5px 40px;
 }
@@ -88,11 +110,38 @@ nav.sticky .logo img{
     height: 3.4rem;
 }
 
+
 /*Tag de Estilo que especifica as propriedades de itens da lista do menu fixo*/
 nav.sticky ul li a{
+    height: 2rem;
+    line-height: 3.4rem;
+    color: #e2e2e2;
+}
+
+nav.sticky ul li a:hover{
+    color: #fff;
     height: 3rem;
     line-height: 3.4rem;
+}
+
+nav.sticky ul li a:hover{
     color: #fff;
+    cursor: pointer;
+}
+
+nav.sticky ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav.sticky ul li a:hover::after{
+    width: 100%; 
 }
 
 /*CLASSES*/
@@ -149,7 +198,7 @@ nav.sticky ul li a{
 
 /* Cor de fundo quando o mouse for posicionado sobre os botões next e prev*/
 .prev:hover, .next:hover {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #e2e2e2;
 }
 
 /* Classe de estilo para os pontos inferior que posiciona eles ao meio*/
@@ -168,12 +217,12 @@ nav.sticky ul li a{
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.6s ease;
+    transition: background-color 0.5s ease;
 }
 
 /*Classe que será definida dentro do Javascript, e alterará o estado da classe .dot*/
 .active, .dot:hover{
-    background-color: #717171;
+    background-color: #246ea7;
 }
 
 /*Animação de fade... talvez não funcione*/
@@ -184,7 +233,7 @@ nav.sticky ul li a{
     animation-duration: 0.5;
 }
 
-.responsive_bar{
+.responsive_nav{
     display: none;
 }
 
@@ -198,9 +247,9 @@ nav.sticky ul li a{
     to {opacity: 1}
 }
 
-@media(max-width:738px){
+@media(max-width:1000px){
 
-    .responsive_bar{
+    .responsive_nav{
         display: block;
         width: 100%;
         background: #303030;
@@ -212,7 +261,7 @@ nav.sticky ul li a{
         z-index: 2;
     }
 
-    .responsive_bar .logo img{
+    .responsive_nav .logo img{
         float: left;
         height: 50px;
         margin: 0;
@@ -220,25 +269,15 @@ nav.sticky ul li a{
         cursor: pointer;
     }
 
-    .responsive_bar .menu h4{
-        color: #fff;
-        margin: 0;
-        padding: 0;
-        line-height: 50px;
-        cursor: pointer;
-        text-transform: uppercase;
-    }
-
-    .responsive_bar .menu_toggle{
+    .responsive_nav .menu_toggle{
         float: right;
         cursor: pointer;
         margin: 0;
         padding: 0;
-        line-height: 60px;
         cursor: pointer;
     }
 
-    .responsive_bar .bar1, .bar2, .bar3{
+    .responsive_nav .bar1, .bar2, .bar3{
         width: 35px;
         height: 5px;
         background-color: #fff;
@@ -246,16 +285,16 @@ nav.sticky ul li a{
         transition: 0.4s;
     }
 
-    .responsive_bar .change .bar1 {
+    .responsive_nav .change .bar1 {
         -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
         transform: rotate(-45deg) translate(-9px, 6px) ;
     }
 
-    .responsive_bar .change .bar2 {
+    .responsive_nav .change .bar2 {
         opacity: 0;
     }
 
-    .responsive_bar .change .bar3 {
+    .responsive_nav .change .bar3 {
         -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
         transform: rotate(45deg) translate(-8px, -8px) ;
     }
