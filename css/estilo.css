@@ -1,5 +1,5 @@
 /*Folha de estilos adicionais fora do Bootstrap*/
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 /*TUDO*/
 *{
     padding: 0;
@@ -64,7 +64,7 @@ nav ul li a{
     line-height: 80px;
     color: #fff;
     padding: 5px 20px;
-    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
     text-transform: 0.6s;
 }
@@ -198,7 +198,7 @@ nav.sticky ul li a{
     to {opacity: 1}
 }
 
-@media(max-width:768px){
+@media(max-width:738px){
 
     .responsive_bar{
         display: block;
@@ -221,13 +221,43 @@ nav.sticky ul li a{
     }
 
     .responsive_bar .menu h4{
-        float: right;
         color: #fff;
         margin: 0;
         padding: 0;
         line-height: 50px;
         cursor: pointer;
         text-transform: uppercase;
+    }
+
+    .responsive_bar .menu_toggle{
+        float: right;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+        line-height: 60px;
+        cursor: pointer;
+    }
+
+    .responsive_bar .bar1, .bar2, .bar3{
+        width: 35px;
+        height: 5px;
+        background-color: #fff;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .responsive_bar .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+        transform: rotate(-45deg) translate(-9px, 6px) ;
+    }
+
+    .responsive_bar .change .bar2 {
+        opacity: 0;
+    }
+
+    .responsive_bar .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+        transform: rotate(45deg) translate(-8px, -8px) ;
     }
 
     nav,

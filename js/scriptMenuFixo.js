@@ -7,7 +7,11 @@ $(window).on('scroll', function(){
 })
 
 $(document).ready(function(){
-  $(".logo img").click(function(){
+  $(".menu_toggle").click(function(){
     $("nav ul").toggleClass("active")
   })
 })
+
+function animatedIcon(x){
+  x.classList.toggle("change");
+}
