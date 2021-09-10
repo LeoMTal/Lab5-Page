@@ -147,7 +147,7 @@ nav.sticky ul li a:hover::after{
 /*CLASSES*/
 
 /*Classe de Estilo que especifica propriedades do container do Slide de banner*/
-.slideMenu_container{
+#slideMenu_container{
     position: relative;
     max-width: 100%;
     margin: auto;
