@@ -1,5 +1,5 @@
 /*Folha de estilos adicionais fora do Bootstrap*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /*TUDO*/
 *,
 *::before
@@ -7,7 +7,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 /*TAGS*/
@@ -70,8 +70,8 @@ nav ul li a{
     letter-spacing: 0.5px;
     color: #e2e2e2;
     margin: 0px 10px;
-    font-family: 'Roboto', sans-serif;
     font-size: 1.4rem;
+    font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
     text-transform: 0.6s;
@@ -100,7 +100,7 @@ nav ul li a:hover::after{
 
 /*Tag de Estilo que especifica as propriedades do menu fixo*/
 nav.sticky{
-    background: rgba(84, 170, 234, 0.9);
+    background: rgba(84, 170, 234, 1);
     height: 70px;
     padding: 5px 40px;
 }
@@ -336,4 +336,78 @@ nav.sticky ul li a:hover::after{
         line-height: 50px !important;
         color: #fff;
     }
+}
+
+#sobre{
+
+}
+.container-fluid{
+
+}
+
+.tituloSuperior_position{
+    text-align: center;
+}
+
+.tituloSuperior_estilo{
+    text-transform: 0.6s;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.tituloInferior_position{
+    text-align: center;
+    position: relative;
+    bottom: 0.5rem;
+}
+
+.tituloInferior_estilo{
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    justify-content: space-around;
+    text-transform: 0.6s;
+}
+
+.rowSobre_conteudo{
+    
+}
+
+.textSobre_container{
+    padding: 0px 30px 0px 20px;
+}
+
+.textSobre_container p{
+    font-size: 20px;
+}
+
+.imgSobre_container{
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.img_hidden{
+    
+}
+
+.img1_sobre{
+    max-width: 100%;
+    height: 280px;
+}
+
+.img2_sobre{
+    position: relative;
+    bottom: 150px;
+    left: 150px;
+    max-width: 100%;
+    height: 300px;
+}
+
+.img3_sobre{
+    position: relative;
+    bottom: 250px;
+    left: 0;
+    max-width: 100%;
+    height: 400px;
 }
