@@ -10,8 +10,11 @@ menuItems.forEach(item => {
 })
 
 function getScrollTopByHref(element) {
-  const id = element.getAttribute('href');
-  return document.querySelector(id).offsetTop;
+  if (element.getAttribute('href') != null && element.getAttribute('href') !== undefined) {
+    const id = element.getAttribute('href');
+    return document.querySelector(id).offsetTop;
+  }
+  return null;
 }
 
 function scrollToIdOnClick(event) {
