@@ -16,6 +16,10 @@ body, html {
     min-height: 200vh;
 }
 
+header{
+    align-items: center;
+}
+
 /*Tag de Estilo do menu de navegador*/
 nav{
     position: fixed;
@@ -472,10 +476,18 @@ nav.sticky ul li a:hover::after{
         display: none;
     }
 
+    .textabout{
+        position: none;
+    }
+
+    .imgabout{
+        position: none;
+    }
+
 }
 
 #about{
-
+    display: flex;
 }
 
 .container_about{
@@ -505,6 +517,8 @@ nav.sticky ul li a:hover::after{
     bottom: 10px;
     font-size: 3vw;
     text-transform: uppercase;
+    display: grid;
+    grid-template-columns: 1fr 200px;
     text-transform: 0.6s;
 }
 
