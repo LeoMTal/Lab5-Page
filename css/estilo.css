@@ -475,65 +475,72 @@ nav.sticky ul li a:hover::after{
 }
 
 #about{
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-    width: auto;
-    height: 1000px;
-    margin-top: 20px;
-    padding: 0 10vw;
-    
+
 }
 
-.tittle_about{
+.container_about{
+    position: absolute;
+    text-align: center;
+}
+
+.content_about{
+    margin: 20px 10vw;
+}
+
+.content_about h4{
     justify-content: space-around;
     letter-spacing: 0.5px;
-    font-size: 1.2rem;
+    color: #000000;
+    font-size: 1.8vw;
     text-transform: uppercase;
     text-transform: 0.6s;
 }
 
-.tittle2_container{
-    position: relative;   
-    bottom: 20px;
-}
-
-.tittle2_container h1{
+.content_about h1{
+    position: relative;
+    justify-content: space-around;
+    letter-spacing: 1px;
     font-weight: bold;
+    color: #000000;
+    bottom: 10px;
+    font-size: 3vw;
+    text-transform: uppercase;
+    text-transform: 0.6s;
 }
 
 .textabout{
-    width: 50%;
-    padding-right: 3vw;
+    padding: 1vw 4vw 0 0;
     float: left;
-    font-size: 20px;
+    width: 50%;
+    height: 500px;
     text-align: left;
 }
 
-.imgAbout_container{
+.imgabout{
+    padding: 1vw 0 0 2vw;
     float: right;
-    padding: 0;
-    
+    width: 50%;
+}
+
+.imgAbout_container{
+    position: absolute;
 }
 
 .imgAbout1{
     position: absolute;
-    height: 18vw;
-    left: 55vw;
-    z-index: 0;
+    height: 20vw;
 }
 
 .imgAbout2{
     position: absolute;
-    height: 23vw;
-    top: 11vw;
-    right: 10vw;
+    top: 3vw;
+    left: 13vw;
+    height: 25vw;
 }
 
 .imgAbout3{
     position: absolute;
-    height: 25vw;
-    top: 23vw;
-    right: 18vw;
+    top: 15vw;
+    left: 2vw;
+    height: 28vw;
 }
-
