@@ -30,7 +30,11 @@ nav{
     padding: 10px 10vw;
     box-sizing: border-box;
     transition: 0.6s;
-    z-index: 1;
+    z-index: 1000;
+}
+
+img{
+    max-width: 100%;
 }
 
 /*Tag de Estilo do link com mouse sobre o link*/
@@ -262,7 +266,7 @@ nav.sticky ul li a:hover::after{
         padding: 10px 15vw;
         box-sizing: border-box;
         transition: 0.6s;
-        z-index: 1;
+        z-index: 1000;
     }
     
     /*Tag de Estilo do link com mouse sobre o link*/
@@ -377,7 +381,7 @@ nav.sticky ul li a:hover::after{
     
 }
 
-@media(max-width:1200px){
+@media(max-width:800px){
 
     .responsive_nav{
         display: block;
@@ -388,7 +392,7 @@ nav.sticky ul li a:hover::after{
         left: 0;
         padding: 5px 20px;
         box-sizing: border-box;
-        z-index: 2;
+        z-index: 1000;
     }
 
     .responsive_nav .logo img{
@@ -475,86 +479,74 @@ nav.sticky ul li a:hover::after{
         bottom: 2vh;
         display: none;
     }
-
-    .textabout{
-        position: none;
-    }
-
-    .imgabout{
-        position: none;
-    }
-
+    
 }
 
 #about{
-    display: flex;
-}
-
-.container_about{
-    position: absolute;
     text-align: center;
+    margin: 20px auto;
+    width: 100vw;
+    height: 1000px;
 }
 
-.content_about{
-    margin: 20px 10vw;
+#about h4{
+    font-size: 1.6rem;
 }
 
-.content_about h4{
-    justify-content: space-around;
-    letter-spacing: 0.5px;
-    color: #000000;
-    font-size: 1.8vw;
-    text-transform: uppercase;
-    text-transform: 0.6s;
-}
+#about h1{
 
-.content_about h1{
     position: relative;
-    justify-content: space-around;
+    bottom: 12px;
     letter-spacing: 1px;
-    font-weight: bold;
-    color: #000000;
-    bottom: 10px;
-    font-size: 3vw;
-    text-transform: uppercase;
-    display: grid;
-    grid-template-columns: 1fr 200px;
-    text-transform: 0.6s;
+    font-weight: 700;
+    font-size: 2.2rem;
+
 }
 
-.textabout{
-    padding: 1vw 4vw 0 0;
-    float: left;
-    width: 50%;
-    height: 500px;
-    text-align: left;
+.contentAbout_container{
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 80vw;
+    margin: 0px auto;
 }
 
-.imgabout{
-    padding: 1vw 0 0 2vw;
-    float: right;
-    width: 50%;
+.contentAbout_container > div{
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+.imgAbout_container img{
+    max-width: 100%;
 }
 
 .imgAbout_container{
-    position: absolute;
+    height: 300px;
+    width: 100vh;
+    position: relative;
 }
 
-.imgAbout1{
+.innerImageAbout_container{
     position: absolute;
-    height: 20vw;
+    margin: 0 auto;
 }
 
-.imgAbout2{
-    position: absolute;
-    top: 3vw;
-    left: 13vw;
-    height: 25vw;
+.imgAbout01{
+    margin-right: 60%;
+    width: 50%;
+    z-index: 1;
 }
 
-.imgAbout3{
+.imgAbout02{
     position: absolute;
-    top: 15vw;
-    left: 2vw;
-    height: 28vw;
+    top: 20%;
+    left: 40%;
+    width: 60%; 
 }
+
+.imgAbout03{
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    width: 70%; 
+}
+
