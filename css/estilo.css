@@ -37,6 +37,15 @@ img{
     max-width: 100%;
 }
 
+a{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #fff;
+    height: 3rem;
+    line-height: 2rem;
+}
+
 /*Tag de Estilo do link com mouse sobre o link*/
 a:hover{
     color: #246ea7;
@@ -152,15 +161,33 @@ nav.sticky ul li a:hover::after{
     width: 100%; 
 }
 
-/*CLASSES*/
-
-/*Classe de Estilo que especifica propriedades do container do Slide de banner*/
+/*ID*/
 #home{
     position: relative;
     max-width: 100%;
     margin: auto;
 }
 
+#about{
+    text-align: center;
+    margin-top: 40px;
+}
+
+#about h4{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+#about h1{
+    position: relative;
+    bottom: 12px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+/*CLASS*/
 /*Classe de Estilo que deixa o slide anterior em off*/
 .slideClass{
     display: none;
@@ -237,13 +264,36 @@ nav.sticky ul li a:hover::after{
 /*Animação de fade... talvez não funcione*/
 .fade{
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 0.5s;
+    -webkit-animation: 0.5s ease alternate infinite;
     animation-name: fade;
-    animation-duration: 0.5;
+    animation: 0.5 ease alternate infinite;
 }
 
 .responsive_nav{
     display: none;
+}
+
+.contentAbout_container{
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 100%;
+    margin: 0px auto;
+    padding: 0 10vw;
+}
+
+.contentAbout_container > div{
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+.imgAbout_container img{
+    max-width: 100%;
+}
+
+.imgAbout_container{
+    margin: 0 auto;
+    place-items: center;
+    padding: 0 2vw;
 }
 
 @-webkit-keyframes fade{
@@ -378,6 +428,10 @@ nav.sticky ul li a:hover::after{
     nav.sticky ul li a:hover::after{
         width: 100%; 
     }
+
+    #about{
+        margin: 0 12vw;
+    }
     
 }
 
@@ -479,74 +533,117 @@ nav.sticky ul li a:hover::after{
         bottom: 2vh;
         display: none;
     }
-    
 }
 
-#about{
+#services{
     text-align: center;
-    margin: 20px auto;
-    width: 100vw;
+    margin-top: 40px;
+    width: 100%;
     height: 1000px;
 }
 
-#about h4{
-    font-size: 1.6rem;
+#services h4{
+    font-size: 1.2rem;
+    text-transform: uppercase;
 }
 
-#about h1{
-
+#services h1{
     position: relative;
     bottom: 12px;
     letter-spacing: 1px;
     font-weight: 700;
-    font-size: 2.2rem;
-
+    font-size: 1.8rem;
+    text-transform: uppercase;
 }
 
-.contentAbout_container{
+.contentServices_container{
     flex-wrap: wrap;
     display: flex;
-    max-width: 80vw;
-    margin: 0px auto;
+    animation: gradientBackgroundAnimation 10s ease alternate infinite;
+    background: linear-gradient(-45deg, #78e4e7, #4164da, #23a6d5, #23d5ab) no-repeat;
+    background-size: 200%;
+    font-family: sans-serif;
+    align-items: center;
+    padding: 10px 0;
 }
 
-.contentAbout_container > div{
+.contentServices_container > div{
     flex: 1 1 300px;
-    margin: 10px;
 }
 
-.imgAbout_container img{
-    max-width: 100%;
+.contentServices_container img{
+    max-width: 8rem;
 }
 
-.imgAbout_container{
-    height: 300px;
-    width: 100vh;
-    position: relative;
+.servicesTable1 h4,
+.servicesTable2 h4,
+.servicesTable3 h4{
+    margin-top: 20px;
+    padding: 0 20px;
+    color: #fff;
+    font-weight: bold;
 }
 
-.innerImageAbout_container{
-    position: absolute;
-    margin: 0 auto;
+.servicesTable1{
+    min-height: 600px;
 }
 
-.imgAbout01{
-    margin-right: 60%;
-    width: 50%;
-    z-index: 1;
+.servicesTable2{
+    min-height: 600px;
 }
 
-.imgAbout02{
-    position: absolute;
-    top: 20%;
-    left: 40%;
-    width: 60%; 
+.servicesTable3{
+    min-height: 600px;
 }
 
-.imgAbout03{
-    position: absolute;
-    top: 80%;
-    left: 5%;
-    width: 70%; 
+.servicesTable1,
+.servicesTable2,
+.servicesTable3{
+    justify-content: center;
+    max-height: 1000px;
+    margin: auto;
 }
 
+.servicesTable1{
+    background-color: rgba(63, 63, 63, 0.4);
+}
+
+.servicesTable2{
+    background-color: rgba(66, 66, 66, 0.4);
+}
+
+.servicesTable3{
+    background-color: rgba(70, 70, 70, 0.4);
+}
+
+.servicesTable1:hover,
+.servicesTable2:hover,
+.servicesTable3:hover{
+    border: 2px solid rgba(243, 242, 242, 0.5);
+    background-color: rgba(126, 126, 126, 0.1);
+}
+
+.link_container{
+    margin-top: 40px;
+    font-size: 1rem;
+}
+
+.link_container a{
+    margin-top: 20px;
+    width: 1rem;
+}
+
+.link_container a:hover{
+    color: rgb(241, 178, 94);
+    max-width: 1.8rem;
+}
+
+@keyframes gradientBackgroundAnimation{
+    from{
+        background-position: 0 50%;
+    }
+
+    to{
+        background-position: 100% 50%;
+    }
+}
