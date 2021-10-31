@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root{
+    --principal: #ff7800;
+    --menu-color: #1c0522;
+    --black:#04021b;
+    --background-canva: #2b1055;
+    --background-light-canva: #7597de;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -47,7 +55,7 @@ p{
     
     
     overflow: hidden;
-    background: linear-gradient(#2b1055, #7597de)
+    background: linear-gradient(var(--background-canva), var(--background-light-canva))
 }
 
 .parallax-banner img{
@@ -87,7 +95,7 @@ header{
     height: 60px;
     width: 100%;
     padding: 10px 5%;
-    background: #1c0522;
+    background: var(--menu-color);
     z-index: 10000;
 }
 
@@ -375,60 +383,26 @@ nav ul li a:hover{
     margin-top: -5px;
 }
 
-.container-portfolio{
-    margin: 20px 0;
-    width: 100%;
-    overflow: hidden;
+.recent-slider{
+    margin-top: 20px;
 }
 
-.recent{
-    width: 100vw;
+.recent-slider .box img{
+    object-fit: contain;
 }
 
-.container-recentSlide{
-    margin: 0 auto;
-    width: 100vw;
-    background: blue;
+.container-portfolio button{
+    background: var(--menu-color);
 }
 
-.btn-container{
-    position: absolute;
-    left: 0;
-    margin-top: 11vw;
-    height: 25vw;
-    width: 100%;
-    z-index: 10;
-}
-
-.prev,
-.next{
-    cursor: pointer;
-    position: absolute;
-    padding: 16px;
-    border: none;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-.prev{
-    left: 0;
-}
-
-.next{
-    right: 0;
-}
-
-.slide-image{
-    display: flex;
-    width: 25vw;
-    background-color: #23d5ab;
-}
-
-.slide-image img{
-    object-fit: cover;
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+   
 }
 
 

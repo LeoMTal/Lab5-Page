@@ -1,42 +1,30 @@
-const slideCarouselImage = document.querySelector('.slide-image');
-const eachImageCarouselNumber = document.querySelectorAll('.slide-image img');
-
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
-
-let counter = 1;
-const size = eachImageCarouselNumber[0].clientWidth;
-
-slideCarouselImage.style.transform = 'translateX(' + ( -size * counter) + 'px)';
-
-
-nextBtn.addEventListener('click', () => {
-    if(counter >= eachImageCarouselNumber.length - 1){
-        return;
-    }
-    slideCarouselImage.style.transition = "transform 0.4s ease-in-out";
-    counter++;
-    slideCarouselImage.style.transform = 'translateX(' + ( -size * counter) + 'px)';
-})
-
-prevBtn.addEventListener('click', () => {
-    if(counter <= 0){
-        return;
-    }
-    slideCarouselImage.style.transition = "transform 0.4s ease-in-out";
-    counter--;
-    slideCarouselImage.style.transform = 'translateX(' + ( -size * counter) + 'px)';
-})
-
-slideCarouselImage.addEventListener('transitionend', () => {
-    if(eachImageCarouselNumber[counter].id === 'lastClone'){
-        slideCarouselImage.style.transition = "none";
-        counter = eachImageCarouselNumber.length - 2;
-        slideCarouselImage.style.transform = 'translateX(' + ( -size * counter) + 'px)';
-    }if(eachImageCarouselNumber[counter].id === 'firstClone'){
-        slideCarouselImage.style.transition = "none";
-        counter = eachImageCarouselNumber.length - counter;
-        slideCarouselImage.style.transform = 'translateX(' + ( -size * counter) + 'px)';
-    }
-})
-
+var swiper = new Swiper(".recent-slider", {
+  loop: true,
+  slidesPerView: 6,
+  spaceBetween: 0,
+  centeredSlides: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  pagination: {
+    clickable: true
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1020: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+    1500: {
+      slidesPerView: 5,
+    },
+  },
+});
