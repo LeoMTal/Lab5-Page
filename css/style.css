@@ -387,13 +387,116 @@ nav ul li a:hover{
     margin-top: 20px;
 }
 
+.swiper{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.recent-slider .box:hover{
+    border: solid 5px #fff;
+}
+
 .recent-slider .box img{
     object-fit: contain;
 }
 
 .container-portfolio button{
-    background: var(--menu-color);
+    margin-top: 20px;
+    padding: 1.5rem 4rem;
+    background: #1d66c5;
+    border: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    letter-spacing:0.5px;
 }
+
+.container-portfolio button:hover{
+    padding: 1.3rem 3.8rem;
+    border: solid .2rem var(--principal);
+}
+
+.container-portfolio button span{
+    margin-right: .2rem;
+    font-weight: bold;
+}
+
+.socialMedia-slider{
+    margin-top: 20px;
+}
+
+.socialMedia-slider .box:hover{
+    border: solid 5px #fff;
+}
+
+.socialMedia-slider .box img{
+    object-fit: contain;
+}
+
+.digitalPainting-slider{
+    margin-top: 20px;
+}
+
+.digitalPainting-slider .box:hover{
+    border: solid 5px #fff;
+}
+
+.digitalPainting-slider .box img{
+    object-fit: contain;
+}
+
+.identidadeVisual-slider{
+    margin-top: 20px;
+}
+
+.identidadeVisual-slider .box:hover{
+    border: solid 5px #fff;
+}
+
+.identidadeVisual-slider .box img{
+    object-fit: contain;
+}
+
+#businessPartners{
+    margin-top: 20px;
+}
+
+.businessPartners-slider{
+    background: rgb(192, 192, 192);
+}
+
+.businessPartners-slider .box{
+    padding: 10px;
+}
+
+#contact{
+    margin-top: 40px;
+    text-align: center;
+}
+
+#contact p{
+    font-size: 2rem;
+}
+
 
 @keyframes fade{
     0%{

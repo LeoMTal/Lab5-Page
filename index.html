@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+
+    <link rel="shortcut icon" href="img/IconeLab5Studios.png">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="banner-container">
+        <div class="parallax-banner">
+            <img src="img/stars.png" id="stars">
+            <img src="img/moon.png" id="moon">
+            <img src="img/mountains_behind.png" id="mountains_behind">
+            <img src="img/mountain_front.png" id="mountain_front">
+        </div>
+    </section>
+
+    <header>
+        <div id="menu-container">
+            <div class="menu-logo">
+                <a href="#banner-container">
+                    <img src="img/logo.png">
+                </a>
+            </div>
+
+            <nav>
+                <ul id="ul">
+                    <li>
+                        <a href="#home">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            Sobre
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#services">
+                            Serviços
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="toggle-container" onclick="functionAnimationMenuToggleMobile(this)">   
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <p>
+                Sobre a
+            </p>
+            <h1>
+                Lab5 Studios
+            </h1>
+            <div class="container-about">
+                <div class="container-textAbout">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Atque facilis harum optio perspiciatis laborum impedit neque nostrum doloremque 
+                        commodi eveniet ipsum explicabo adipisci reiciendis numquam ipsa veritatis omnis, 
+                        enim accusantium!<br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Atque facilis harum optio perspiciatis laborum impedit neque nostrum doloremque 
+                        commodi eveniet ipsum explicabo adipisci reiciendis numquam ipsa veritatis omnis, 
+                        enim accusantium!<br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Atque facilis harum optio perspiciatis laborum impedit neque nostrum doloremque 
+                        commodi eveniet ipsum explicabo adipisci reiciendis numquam ipsa veritatis omnis, 
+                        enim accusantium!<br>
+                    </p>
+
+                </div>
+
+                <div class="container-imgAbout">
+                    <div class="imgAbout-position">
+                        <img src="img/01.png" id="imgAbout1">
+                        <img src="img/02.png" id="imgAbout2">
+                        <img src="img/03.png" id="imgAbout3">
+                    </div>
+                </div>
+                <img src="img/sobreimg.png" id="imgAbout4">
+            </div>
+        </section>
+
+        <section id="services">
+            <p>
+                Alguns Serviços
+            </p>
+            <h1>
+                Que Oferecemos
+            </h1>
+
+            <div class="container-services">
+                <div class="col-services1">
+                    <img src="img/iconedesigngrafico.png">
+                    <h1><a href="#">Design Gráfico</a></h1>
+                    <div class="container-linkServices">
+                        <ul>
+                            <li>
+                                <a href="#">Comissions</a>
+                            </li>
+                            <li>
+                                <a href="#">Chibis</a>
+                            </li>
+                            <li>
+                                <a href="#">Concept Art</a>
+                            </li>
+                            <li>
+                                <a href="#">Game Art</a>
+                            </li>
+                            <li>
+                                <a href="#">Character Design</a>
+                            </li>
+                            <li>
+                                <a href="#">Environment Design</a>
+                            </li>
+                            <li>
+                                <a href="#">Motion Design</a>
+                            </li>
+                            <li>
+                                <a href="#">Design De Vídeos</a>
+                            </li>
+                            <li>
+                                <a href="#">Animação</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#"><button class="btn-services">Saiba mais</button></a>
+                </div>
+                <div class="col-services2">
+                    <img src="img/iconeidentidadevisual.png">
+                    <h1><a href="#">Identidade Visual</a></h1>
+                    <div class="container-linkServices">
+                        <ul>
+                            <li>
+                                <a href="#">Logotipos</a>
+                            </li>
+                            <li>
+                                <a href="#">Design De Embalagens</a>
+                            </li>
+                            <li>
+                                <a href="#">Banners</a>
+                            </li>
+                            <li>
+                                <a href="#">Overlays</a>
+                            </li>
+                            <li>
+                                <a href="#">Social Media Design</a>
+                            </li>
+                            <li>
+                                <a href="#">Thumbnail Design</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#"><button class="btn-services">Saiba mais</button></a>
+                </div>
+                <div class="col-services3">
+                    <img src="img/iconewebsite.png">
+                    <h1><a href="#">Websites</a></h1>
+                    <div class="container-linkServices">
+                        <ul>
+                            <li>
+                                <a href="#">Desenvolvimento Web (Front-end e Back-end)</a>
+                            </li>
+                            <li>
+                                <a href="#">Desenvolvimento de Sistemas Web</a>
+                            </li>
+                            <li>
+                                <a href="#">Desenvolvimento de Lojas Virtuais</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#"><button class="btn-services">Saiba mais</button></a>
+                </div>    
+        </section>
+
+        <section id="portfolio">
+            <p>
+                Nossa seção
+            </p>
+            <h1>
+                De Portfólio
+            </h1>  
+
+            <div class="container-portfolio">
+
+                <div class="swiper recent-slider">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide box">
+                            <a href="#">
+                                <img src="img/portfolioImg/Destaques/1.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide box">
+                            <a href="">
+                                <img src="img/portfolioImg/Destaques/2.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide box">
+                            <a href="">
+                                <img src="img/portfolioImg/Destaques/3.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide box">
+                            <a href="">
+                                <img src="img/portfolioImg/Destaques/4.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide box">
+                            <a href="">
+                                <img src="img/portfolioImg/Destaques/5.png" alt="">
+                            </a>
+                        </div>
+                        
+                        <div class="swiper-slide box">
+                            <a href="">
+                                <img src="img/portfolioImg/Destaques/6.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide box">
+                            <a href="">
+                                <img src="img/portfolioImg/Destaques/7.png" alt="">
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                  
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <a href="#"><button><span>+</span> Recentes </button></a>
+
+                </div>
+
+                <div class="swiper socialMedia-slider">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide box">
+                            <a href="#">
+                                <img src="img/portfolioImg/Destaques/1.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide box">
+                            <a href="">
+                                <img src="img/portfolioImg/Destaques/2.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide box">
+                            <a href="">
+                                <img src="img/portfolioImg/Destaques/3.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide box">
+                            <a href="">
+                                <img src="img/portfolioImg/Destaques/4.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide box">
+                            <a href="">
+                                <img src="img/portfolioImg/Destaques/5.png" alt="">
+                            </a>
+                        </div>
+                        
+                        <div class="swiper-slide box">
+                            <a href="">
+                                <img src="img/portfolioImg/Destaques/6.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide box">
+                            <a href="">
+                                <img src="img/portfolioImg/Destaques/7.png" alt="">
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                  
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <a href="#"><button><span>+</span> Mídias Sociais </button></a>
+                    
+                </div>
+                
+                <div class="swiper digitalPainting-slider">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide box">
+                            <a href="#">
+                                <img src="img/portfolioImg/Destaques/1.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide box">
+                            <a href="">
+                                <img src="img/portfolioImg/Destaques/2.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide box">
+                            <a href="">
+                                <img src="img/portfolioImg/Destaques/3.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide box">
+                            <a href="">
+                                <img src="img/portfolioImg/Destaques/4.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide box">
+                            <a href="">
+                                <img src="img/portfolioImg/Destaques/5.png" alt="">
+                            </a>
+                        </div>
+                        
+                        <div class="swiper-slide box">
+                            <a href="">
+                                <img src="img/portfolioImg/Destaques/6.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide box">
+                            <a href="">
+                                <img src="img/portfolioImg/Destaques/7.png" alt="">
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                  
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <a href="#"><button><span>+</span> Pintura Digital </button></a>
+                    
+                </div>
+
+                <div class="swiper identidadeVisual-slider">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide box">
+                            <a href="#">
+                                <img src="img/portfolioImg/Destaques/1.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide box">
+                            <a href="">
+                                <img src="img/portfolioImg/Destaques/2.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide box">
+                            <a href="">
+                                <img src="img/portfolioImg/Destaques/3.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide box">
+                            <a href="">
+                                <img src="img/portfolioImg/Destaques/4.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide box">
+                            <a href="">
+                                <img src="img/portfolioImg/Destaques/5.png" alt="">
+                            </a>
+                        </div>
+                        
+                        <div class="swiper-slide box">
+                            <a href="">
+                                <img src="img/portfolioImg/Destaques/6.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide box">
+                            <a href="">
+                                <img src="img/portfolioImg/Destaques/7.png" alt="">
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                  
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <a href="#"><button><span>+</span> Identidade Visual </button></a>
+                    
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="businessPartners">
+
+            <div class="businessPartners-container">
+
+                <div class="swiper businessPartners-slider">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide box">
+                                <img src="img/businessPartners/BusinessPartners1.png" alt="">
+                        </div>
+
+                        <div class="swiper-slide box">
+                            <img src="img/businessPartners/BusinessPartners2.png" alt="">
+                        </div>
+
+                        <div class="swiper-slide box">
+                            <img src="img/businessPartners/BusinessPartners3.png" alt="">
+                        </div>
+
+                        <div class="swiper-slide box">
+                            <img src="img/businessPartners/BusinessPartners4.png" alt="">
+                        </div>
+
+                        <div class="swiper-slide box">
+                            <img src="img/businessPartners/BusinessPartners5.png" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+        </section>
+
+        <section id="contact">
+
+            <p>Gostou do que viu?</p>
+            
+        </section>
+
+    </main>
+
+    <footer>
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="js/menu.js"></script>
+        <script type="text/javascript" src="js/parallaxBannerEffect.js"></script>
+        <script type="text/javascript" src="js/slideShowImages.js"></script>
+    </footer>
+
+</body>
+</html>
