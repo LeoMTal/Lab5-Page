@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
     <link rel="stylesheet" type="text/css" href="css/style.css">
     
 
@@ -478,8 +480,66 @@
 
         <section id="contact">
 
-            <p>Gostou do que viu?</p>
-            
+            <div class="contact-container">
+
+                <p>Gostou do que viu?</p>
+                <h4><span>Fale </span>conosco</h4>
+
+            </div>
+
+            <div class="contact-info">
+
+                <div class="info-detail">
+                    <i class="fas fa-phone"></i>
+                    <p>Telefone: (18) 99724-6894</p>
+                </div>
+
+                <div class="info-detail">
+                    <i class="fas fa-map-marker-alt"></i>  
+                    <p>Rua: Quintino Bocaiúva, 935</p>
+                    <p>Zona-7, Maringá - Paraná</p>
+                </div>
+                
+                <div class="info-detail">
+                    <i class="fas fa-envelope"></i> 
+                    <p>lab5studios.digital@gmail.com</p>
+                </div>
+                
+            </div>
+                
+                <form action="" class="msg-form">
+
+                    <div class="form-container">
+
+                        <div class="msg-name">
+                            <input type="name" placeholder="Nome*" name="fullName">
+                        </div>
+                        
+                        <div class="msg-city">
+                            <input type="text" placeholder="Cidade*" name="city">
+                        </div>
+                        
+                        <div class="msg-email">
+                            <input type="email" placeholder="Email*" name="email">
+                        </div>
+                        
+                        <div class="msg-phone">
+                            <input type="phone" placeholder="Telefone" name="phone">
+                        </div>
+
+                    </div>
+
+                    <div class="msg-message">
+                        <p>Mensagem*</p>
+                        <textarea name="message" form="msg-form"></textarea>
+                    </div>
+
+                    <div class="msg-send">
+                        <input type="submit" value="Enviar">
+                    </div>
+                    
+                </form>
+
         </section>
 
     </main>
