@@ -512,15 +512,15 @@
                     <div class="form-container">
 
                         <div class="msg-name">
-                            <input type="name" placeholder="Nome*" name="fullName">
+                            <input type="name" placeholder="Nome*" name="fullName" required>
                         </div>
                         
                         <div class="msg-city">
-                            <input type="text" placeholder="Cidade*" name="city">
+                            <input type="text" placeholder="Cidade*" name="city" required>
                         </div>
                         
                         <div class="msg-email">
-                            <input type="email" placeholder="Email*" name="email">
+                            <input type="email" placeholder="Email*" name="email" required>
                         </div>
                         
                         <div class="msg-phone">
@@ -530,8 +530,8 @@
                     </div>
 
                     <div class="msg-message">
-                        <p>Mensagem*</p>
-                        <textarea name="message" form="msg-form"></textarea>
+                        <Label for="message">Mensagem*</Label>
+                        <textarea name="message" form="msg-form"></textarea required>
                     </div>
 
                     <div class="msg-send">
@@ -542,9 +542,116 @@
 
         </section>
 
+        <section id="socialMedia">
+            <div class="socialMedia-container">
+
+                <h4>Conecte-se com a</h4>
+                <h1>Lab5 Studios</h1>
+
+                <div class="icon-container">
+
+                    <a href="#" class="fab fa-facebook-f box"></a>
+                    <a href="#" class="fab fa-instagram box"></a>
+                    <a href="#" class="fab fa-pinterest-p box"></a>
+                    <a href="#" class="fab fa-twitch box"></a>
+                    <a href="#" class="fab fa-youtube box"></a>
+
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
 
     <footer>
+
+        <section id="footer">
+            <a href="#banner-container" class="scrollUp-btn">UP</a>
+
+            <div class="footerLinks-container">
+                <ul>
+
+                    <li>
+                        <a href="">Sobre Nós</a>
+                        <span>●</span>
+                    </li>
+
+                    <li>
+                        <a href="">Carreiras</a>
+                        <span>●</span>
+                    </li>
+
+                    <li>
+                        <a href="">Suporte</a>
+                        <span>●</span>
+                    </li>
+
+                    <li>
+                        <a href="">Site Global</a>
+                        <span>●</span>
+                    </li>
+
+                    <li>
+                        <a href="">Notícias</a>
+                    </li>
+
+                </ul>
+
+                <ul>
+
+                    <li>
+                        <a href="">Termos de Uso</a>
+                        <span>●</span>
+                    </li>
+
+                    <li>
+                        <a href="">Aviso de Privacidade</a>
+                        <span>●</span>
+                    </li>
+
+                    <li>
+                        <a href="">Política de Conteúdo Não Solicitado</a>
+                        <span>●</span>
+                    </li>
+
+                    <li>
+                        <a href="">Declarações Corporativas</a>
+                        <span>●</span>
+                    </li>
+
+                    <li>
+                        <a href="">Política de Uso de Materiais</a>
+                        <span>●</span>
+                    </li>
+
+                    <li>
+                        <a href="">Imprensa</a>
+                        <span>●</span>
+                    </li>
+
+                    <li>
+                        <a href="">Aviso de Cookies</a>
+                        <span>●</span>
+                    </li>
+
+                    <li>
+                        <a href="">Licenciamento</a>
+                        <span>●</span>
+                    </li>
+
+                    <li>
+                        <a href="">RSS<i class="fas fa-rss"></i></a>
+                    </li>
+
+                </ul>
+
+                <p>©<span>2021 LAB5 STUDIOS DIGITAL LTDA</span>.Todos os direitos reservados.<span>LAB5 STUDIOS</span> e o logotipo da <span>LAB5 STUDIOS</span> são marcas comerciais ou marcas registradas da Lab5 Studios Company, Ltda</p>
+                
+            </div>
+
+        </section>
+
         <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
         <script type="text/javascript" src="js/menu.js"></script>
         <script type="text/javascript" src="js/parallaxBannerEffect.js"></script>
