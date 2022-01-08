@@ -1,6 +1,6 @@
 var swiper = new Swiper(".recent-slider", {
   loop: true,
-  slidesPerView: 6,
+  slidesPerView: 3,
   spaceBetween: 0,
   centeredSlides: true,
   navigation: {
@@ -20,11 +20,8 @@ var swiper = new Swiper(".recent-slider", {
     1020: {
       slidesPerView: 3,
     },
-    1200: {
-      slidesPerView: 4,
-    },
-    1500: {
-      slidesPerView: 5,
+    1440: {
+      slidesPerView: 3,
     },
   },
 });
@@ -51,11 +48,8 @@ var swiper = new Swiper(".socialMedia-slider", {
     1020: {
       slidesPerView: 3,
     },
-    1200: {
-      slidesPerView: 4,
-    },
-    1500: {
-      slidesPerView: 5,
+    1440: {
+      slidesPerView: 3,
     },
   },
 });
@@ -82,11 +76,8 @@ var swiper = new Swiper(".digitalPainting-slider", {
     1020: {
       slidesPerView: 3,
     },
-    1200: {
-      slidesPerView: 4,
-    },
-    1500: {
-      slidesPerView: 5,
+    1440: {
+      slidesPerView: 3,
     },
   },
 });
@@ -113,11 +104,8 @@ var swiper = new Swiper(".identidadeVisual-slider", {
     1020: {
       slidesPerView: 3,
     },
-    1200: {
-      slidesPerView: 4,
-    },
-    1500: {
-      slidesPerView: 5,
+    1440: {
+      slidesPerView: 3,
     },
   },
 });
